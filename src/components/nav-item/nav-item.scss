@@ -5,8 +5,12 @@
    display: inline-block;
    font-family: $main-font;
    font-size: 0.8rem;
-   color: $header-text-color;
    font-weight: 500;
+
+   a {
+      text-decoration: none;
+      color: $header-text-color;
+   }
 
    &:not(:first-child) {
       margin-left: 20px;

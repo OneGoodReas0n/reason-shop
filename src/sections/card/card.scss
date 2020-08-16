@@ -1,0 +1,20 @@
+@import '../../styles/colors.scss';
+
+.card {
+   margin: 40px 0;
+
+   img {
+      width: 300px;
+   }
+
+   a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: $content-text-color;
+   }
+
+   &:not(:first-child) {
+      margin-left: 40px;
+   }
+}

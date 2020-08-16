@@ -10,10 +10,19 @@ type TextComponentProps = {
 
 type HasPrice = {
    withPrice?: boolean;
-   price?: string;
+   price?: number;
+};
+
+type CardsArrayProps = {
+   cards: CardProps[];
+};
+
+type SelectProps = {
+   type: string;
 };
 
 type CaptionProps = TextComponentProps & HasPrice;
-type CategoryProps = TextComponentProps & ImageProps;
+type CardProps = CaptionProps & ImageProps;
+type CategoryProps = CardsArrayProps & TextComponentProps;
 
-export { ImageProps, TextComponentProps, CaptionProps, CategoryProps };
+export { ImageProps, TextComponentProps, CaptionProps, CardProps, CategoryProps, SelectProps };

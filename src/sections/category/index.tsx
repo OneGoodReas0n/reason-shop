@@ -1,16 +1,33 @@
 import React from 'react';
 import './category.scss';
-import ImageComponent from '../../components/image-component';
-import Caption from '../../components/caption';
+import TextComponent from '../../components/text-component';
 import { CategoryProps } from '../../interfaces';
+import Card from '../card';
 
-function Category({ src, alt, text, type = 'subtitle' }: CategoryProps) {
+const Category = ({ cards, text, type = 'title' }: CategoryProps) => {
+   const cardElements = cards.map((e) => {
+      return (
+         <Card
+            src={e.src}
+            alt={e.alt}
+            key={e.src}
+            text={e.text}
+            type={e.type}
+            withPrice={e.withPrice}
+            price={e.price}
+         />
+      );
+   });
    return (
       <div className="category">
-         <ImageComponent src={src} alt={alt} />
-         <Caption text={text} type={type} />
+         <div className="container">
+            <div className="content">
+               <TextComponent text={text} type={type} />
+               <div className="cards">{cardElements}</div>
+            </div>
+         </div>
       </div>
    );
-}
+};
 
 export default Category;
