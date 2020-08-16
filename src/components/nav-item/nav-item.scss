@@ -1,0 +1,11 @@
+@import '../../styles/fonts.scss';
+
+.nav-item {
+   display: inline-block;
+   font-family: $main-font;
+   color: #fff;
+
+   &:not(:first-child) {
+      margin-left: 20px;
+   }
+}
