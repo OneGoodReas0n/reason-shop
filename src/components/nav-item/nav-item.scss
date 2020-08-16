@@ -1,9 +1,12 @@
 @import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
 
 .nav-item {
    display: inline-block;
    font-family: $main-font;
-   color: #fff;
+   font-size: 0.8rem;
+   color: $header-text-color;
+   font-weight: 500;
 
    &:not(:first-child) {
       margin-left: 20px;

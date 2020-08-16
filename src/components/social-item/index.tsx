@@ -1,9 +1,9 @@
 import React from 'react';
 import './social-item.scss';
-import Icon from '../icon';
-import { IconProps } from '../../interfaces';
+import Icon from '../image-component';
+import { ImageProps } from '../../interfaces';
 
-function SocialItem({ src, alt }: IconProps) {
+function SocialItem({ src, alt }: ImageProps) {
    return (
       <div className="social-item">
          <Icon src={src} alt={alt} />

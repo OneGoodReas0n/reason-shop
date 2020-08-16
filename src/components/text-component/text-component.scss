@@ -1,6 +1,25 @@
 @import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
 
-.text-component {
-   color: #fff;
+.text-title {
+   padding-top: 30px;
+   color: $content-text-color;
+   font-family: $main-font;
+   font-size: 1.2rem;
+   text-transform: capitalize;
+   text-align: center;
+   font-weight: 600;
+}
+
+.text-subtitle {
+   padding: 10px 0;
+   color: $content-text-color;
+   font-family: $main-font;
+   text-align: center;
+}
+
+.text-copyright {
+   color: $footer-text-color;
    font-family: $copyright-font;
+   font-size: 0.7rem;
 }

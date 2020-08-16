@@ -1,7 +1,7 @@
 import React from 'react';
-import { IconProps } from '../../interfaces';
+import { ImageProps } from '../../interfaces';
 
-const Icon = ({ src, alt }: IconProps) => {
+const Icon = ({ src, alt }: ImageProps) => {
    return <img src={src} alt={alt} />;
 };
 

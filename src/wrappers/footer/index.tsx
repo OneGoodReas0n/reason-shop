@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer">
          <div className="container">
             <Socials />
-            <TextComponent text="Copyrigth @2020, Powered by Reason" />
+            <TextComponent text="Copyrigth @2020, Powered by Reason" type="copyright" />
          </div>
       </div>
    );
